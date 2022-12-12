@@ -1,0 +1,38 @@
+[
+ {
+ "title": "Civilization 5",
+ "esrbRating": "T",
+ "userRating": 10,
+ "price": 29.99
+ },
+ {
+ "title": "God Of War 5",
+ "esrbRating": "R",
+ "userRating": 6,
+ "price": 59.99
+ },
+ {
+ "title": "Hearts of Iron 4",
+ "esrbRating": "T",
+ "userRating": 8,
+ "price": 39.99
+ },
+ {
+ "title": "Elden Ring",
+ "esrbRating": "M",
+ "userRating": 10,
+ "price": 69.99
+ },
+ {
+ "title": "Grand Theft Auto 5",
+ "esrbRating": "R",
+ "userRating": 7,
+ "price": 69.99
+ },
+ {
+ "title": "Minecraft",
+ "esrbRating": "E",
+ "userRating": 9,
+ "price": 19.99
+ }
+] 

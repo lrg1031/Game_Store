@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="360.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.lukegreen_finalproject_csc311.PrimaryController">
+   <children>
+      <MenuBar layoutY="-1.0" prefHeight="12.0" prefWidth="600.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#resetPurchases" text="Reset Purchases" />
+              <MenuItem mnemonicParsing="false" onAction="#closeGUI" text="Close" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+      <Button fx:id="loadDb" layoutX="80.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadDBFromJSONfile" text="Load Database" />
+      <Button layoutX="196.0" layoutY="65.0" mnemonicParsing="false" onAction="#loadGamesFromDB" text="Load Game Store" />
+      <Button layoutX="14.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleLeft" text="&lt;-" />
+      <Button layoutX="316.0" layoutY="316.0" mnemonicParsing="false" onAction="#handleRight" prefHeight="25.0" prefWidth="30.0" text="-&gt;" />
+      <Text layoutX="429.0" layoutY="82.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Purchased Games">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <ListView fx:id="purchasedView" layoutX="378.0" layoutY="100.0" prefHeight="200.0" prefWidth="200.0" />
+      <Text layoutX="416.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost: ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <TextField fx:id="costText" editable="false" layoutX="497.0" layoutY="307.0" prefHeight="25.0" prefWidth="64.0" />
+      <Text layoutX="69.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Title:  ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Text layoutX="69.0" layoutY="260.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Price:">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Text>
+      <Button fx:id="purchaseBtn" layoutX="143.0" layoutY="316.0" mnemonicParsing="false" onAction="#handlePurchase" text="Purchase" />
+      <Text layoutX="69.0" layoutY="180.0" strokeType="OUTSIDE" strokeWidth="0.0" text="ESRB Rating: " />
+      <Text layoutX="69.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="User Rating: " />
+      <Text layoutX="7.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Previous" />
+      <Text layoutX="14.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game" />
+      <Text layoutX="316.0" layoutY="312.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game" />
+      <Text layoutX="319.0" layoutY="298.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Next" />
+      <TextField fx:id="titleText" editable="false" layoutX="151.0" layoutY="122.0" />
+      <TextField fx:id="esrbText" editable="false" layoutX="151.0" layoutY="163.0" />
+      <TextField fx:id="userRatingText" editable="false" layoutX="151.0" layoutY="203.0" />
+      <TextField fx:id="priceText" editable="false" layoutX="151.0" layoutY="242.0" />
+      <Text fx:id="purchasedText" fill="#00cd00" layoutX="59.0" layoutY="312.0" opacity="0.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Game Purchased!!!">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>
